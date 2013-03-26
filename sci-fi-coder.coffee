@@ -10,8 +10,6 @@ SciFiCoder.type = (element, text, speed = 20, fails = 5, alphabet = defaultAlpha
     type = ->
         currentText = text.substr(0, currentPosition)
 
-        console.log currentText
-
         if tries < fails
             currentText += alphabet[Math.floor(Math.random() * alphabet.length)]
             tries++

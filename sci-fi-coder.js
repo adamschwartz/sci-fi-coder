@@ -19,7 +19,6 @@
     type = function() {
       var currentText;
       currentText = text.substr(0, currentPosition);
-      console.log(currentText);
       if (tries < fails) {
         currentText += alphabet[Math.floor(Math.random() * alphabet.length)];
         tries++;
