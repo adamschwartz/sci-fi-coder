@@ -78,10 +78,12 @@
             large {
                 display: block;
                 -webkit-animation: flicker 4.5s linear 5;
+                -moz-animation: flicker 4.5s linear 5;
             }
 
             small {
                 -webkit-animation: flicker 3.5s 2s linear 5;
+                -moz-animation: flicker 3.5s 2s linear 5;
             }
 
             @-webkit-keyframes flicker {
@@ -98,6 +100,23 @@
                 52%, 56% {
                     opacity: 1;
                     -webkit-transform: skewX(0deg);
+                }
+            }
+
+            @-moz-keyframes flicker {
+                0%, 3%, 44%, 48%, 100% {
+                    opacity: 1;
+                }
+                1%, 2%, 45%, 47% {
+                    opacity: 0;
+                }
+                53%, 55% {
+                    opacity: 0;
+                    -moz-transform: skewX(-270deg);
+                }
+                52%, 56% {
+                    opacity: 1;
+                    -moz-transform: skewX(0deg);
                 }
             }
 
