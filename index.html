@@ -57,10 +57,18 @@
                 opacity: 0.4;
             }
 
+            #retweet_button {
+                position: fixed;
+                bottom: 30px;
+                left: 50%;
+                width: 100px;
+                margin-left: -100px;
+            }
+
             @media (max-width: 900px) {
                 message {
                     width: 80%;
-                    padding: 30% 10%;
+                    padding: 30% 0 0 10%;
                     left: 0;
                     margin-left: 0;
                     font-size: 40px;
@@ -74,6 +82,10 @@
 
                 mask:before {
                     -webkit-mask-size: 250%;
+                }
+
+                #retweet_button {
+                    margin-left: -140px;
                 }
             }
 
@@ -120,14 +132,6 @@
                     opacity: 1;
                     -moz-transform: skewX(0deg);
                 }
-            }
-
-            #retweet_button {
-                position: fixed;
-                bottom: 30px;
-                left: 50%;
-                width: 100px;
-                margin-left: -100px;
             }
 
             credits {
